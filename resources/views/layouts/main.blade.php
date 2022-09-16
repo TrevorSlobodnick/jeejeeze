@@ -26,19 +26,19 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href={{ URL::to('/store-locator') }}>
+                                <a class="nav-link {{ Request::segment(1) === "stores" ? "active" : "" }}" href={{ URL::to('/stores') }}>
                                     <x-icon name="home" />
                                     <span>Stores</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href={{ URL::to('/account') }}>
+                                <a class="nav-link {{ Request::segment(1) === "account" ? "active" : "" }}" href={{ URL::to('/account') }}>
                                     <x-icon name="user" />
                                     <span>Account</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href={{ URL::to('/cart') }}>
+                                <a class="nav-link {{ Request::segment(1) === "cart" ? "active" : "" }}" href={{ URL::to('/cart') }}>
                                     <x-icon name="shopping-cart" />
                                     <span>Cart</span>
                                 </a>
