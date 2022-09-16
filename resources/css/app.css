@@ -1,12 +1,40 @@
 @font-face {
     font-family: 'Raleway';
-    src: url("fonts/Raleway.ttf");
+    src: url("/public/fonts/Raleway.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("/public/fonts/Montserrat.ttf");
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("/public/fonts/OpenSans.ttf");
 }
 
 header{
     padding: 1.5rem;
     background-color: #0046BE;
     color: white !important;
+}
+
+.navbar .nav-link{
+    font-family: 'Montserrat', Nunito, sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-link:hover{
+    color: yellow !important;
+    fill: yellow !important;
+}
+
+.navbar .icon{
+    stroke-width: 2px;
+    margin: 0px 6px;
 }
 
 .navbar-brand{
@@ -24,16 +52,6 @@ header{
     font-family: 'Raleway', Arial, sans-serif;
     font-weight: 900;
     font-size: 1.5rem;
-}
-
-header .nav-link{
-    display: flex;
-    align-items: center;
-}
-
-header .icon{
-    stroke-width: 1px;
-    margin: 0px 6px;
 }
 
 
